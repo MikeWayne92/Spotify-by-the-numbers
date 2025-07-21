@@ -2,7 +2,7 @@
 
 A sleek, interactive dashboard for visualizing your Spotify listening history. Upload your Spotify data and get beautiful visualizations of your listening habits.
 
-![Spotify by the Numbers](https://images.unsplash.com/photo-1611339555312-e607c8352fd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80)
+![Spotify by the Numbers Dashboard](SpotifyDash.png)
 
 ## 🚀 Features
 
@@ -17,6 +17,7 @@ A sleek, interactive dashboard for visualizing your Spotify listening history. U
 
 - Node.js (v16.x or later)
 - npm or yarn
+- A Spotify account (for your own data)
 
 ## 🛠️ Installation
 
@@ -52,22 +53,23 @@ yarn build
 
 The built files will be in the `dist` directory.
 
-## 🧪 How to Use
+## 🧪 Quick Start
 
-1. Export your Spotify data:
-   - Go to your [Spotify Account](https://www.spotify.com/account/privacy/) page
-   - Click on "Download your data"
-   - Wait for the email (this can take up to 30 days)
-   - Download and extract the ZIP file
+### Try with Sample Data
+If you want to test the application immediately:
+1. Navigate to `docs/sample-data/`
+2. Use the provided `sample-streaming-data` file
+3. Upload it to the application to see it in action
 
-2. Upload your data to the app:
-   - Look for JSON files in the `MyData` folder, particularly files named like `StreamingHistory*.json`
-   - Click the upload button in the app and select one of these files
+### Get Your Own Spotify Data
+For detailed instructions on getting your Spotify data, see our comprehensive guide:
+**[📖 Getting Started Guide](docs/GETTING_STARTED.md)**
 
-3. Explore your listening data:
-   - View your top artists and tracks
-   - Use the time sliders to zoom in on specific periods
-   - Toggle between light and dark themes as needed
+The guide includes:
+- Step-by-step screenshots for requesting your data
+- Understanding your data structure
+- Troubleshooting common issues
+- Privacy and security information
 
 ## 🧰 Tech Stack
 
