@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FileUpload } from './components/FileUpload';
 import { Dashboard } from './components/Dashboard';
 import { ThemeToggle } from './components/ThemeToggle';
+import { Logo } from './components/Logo';
 import { processSpotifyData } from './utils/analytics';
 import { SpotifyTrack, AnalyticsData } from './types';
 import { motion } from 'framer-motion';
@@ -26,17 +27,7 @@ function App() {
       <div className="container mx-auto py-8 px-4">
         <div className="text-center mb-12">
           {/* Logo */}
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="flex justify-center mb-6"
-          >
-            <img 
-              src="/logos/wavelytics-logo.png" 
-              alt="Wavelytics" 
-              className="h-16 md:h-20 object-contain"
-            />
-          </motion.div>
+          <Logo className="h-16 md:h-20 mb-6" />
           
           <motion.h1 
             initial={{ opacity: 0, y: -20 }}
