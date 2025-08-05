@@ -4,6 +4,7 @@ import { Dashboard } from './components/Dashboard';
 import { ThemeToggle } from './components/ThemeToggle';
 import { processSpotifyData } from './utils/analytics';
 import { SpotifyTrack, AnalyticsData } from './types';
+import { motion } from 'framer-motion';
 
 function App() {
   const [isDark, setIsDark] = useState(false);
@@ -15,15 +16,31 @@ function App() {
   };
 
   return (
-    <div className={`min-h-screen transition-colors duration-200 ${
-      isDark ? 'dark bg-gray-900 text-white' : 'bg-gray-100 text-gray-900'
+    <div className={`min-h-screen transition-all duration-300 font-spotify ${
+      isDark 
+        ? 'dark bg-spotify-gray-dark text-spotify-white' 
+        : 'bg-gradient-to-br from-gray-50 to-gray-100 text-spotify-black'
     }`}>
       <ThemeToggle isDark={isDark} onToggle={() => setIsDark(!isDark)} />
       
-      <div className="container mx-auto py-8">
-        <h1 className="text-4xl font-bold text-center mb-8">
-          Spotify Listening Analytics
-        </h1>
+      <div className="container mx-auto py-8 px-4">
+        <div className="text-center mb-12">
+          <motion.h1 
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-5xl md:text-6xl font-bold mb-4 bg-spotify-gradient bg-clip-text text-transparent"
+          >
+            Spotify by the Numbers
+          </motion.h1>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="text-lg md:text-xl text-gray-600 dark:text-spotify-gray-light max-w-2xl mx-auto"
+          >
+            Visualize your listening habits with beautiful, interactive analytics
+          </motion.p>
+        </div>
         
         {!analyticsData && <FileUpload onFileUpload={handleFileUpload} />}
         {analyticsData && <Dashboard data={analyticsData} />}
