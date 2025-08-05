@@ -65,7 +65,7 @@ export const FileUpload: React.FC<FileUploadProps> = ({ onFileUpload }) => {
               Upload Your Spotify Data
             </h3>
             <p className="text-gray-600 dark:text-spotify-gray-light mb-6 max-w-md">
-              Drag and drop your Spotify data file or click to browse. We'll analyze your listening patterns and create beautiful visualizations.
+              Drag and drop your Spotify data file or click to browse. Wavelytics will analyze your listening patterns and create beautiful visualizations.
             </p>
             
             {/* File type indicator */}

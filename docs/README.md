@@ -1,6 +1,6 @@
 # Documentation
 
-This folder contains all the documentation and resources for the Spotify by the Numbers project.
+This folder contains all the documentation and resources for the Wavelytics project.
 
 ## 📁 Folder Structure
 

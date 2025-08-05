@@ -1,8 +1,8 @@
-# Spotify by the Numbers
+# Wavelytics
 
-A sleek, interactive dashboard for visualizing your Spotify listening history. Upload your Spotify data and get beautiful visualizations of your listening habits.
+A sleek, interactive dashboard for visualizing your Spotify listening history. Upload your Spotify data and get beautiful visualizations of your listening habits powered by Wavelytics.
 
-![Spotify by the Numbers Dashboard](SpotifyDash.png)
+![Wavelytics Dashboard](SpotifyDash.png)
 
 ## 🚀 Features
 
@@ -23,8 +23,8 @@ A sleek, interactive dashboard for visualizing your Spotify listening history. U
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/spotify-by-the-numbers.git
-cd spotify-by-the-numbers
+git clone https://github.com/your-username/wavelytics.git
+cd wavelytics
 ```
 
 2. Install dependencies:
@@ -81,7 +81,7 @@ The guide includes:
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/your-username/spotify-by-the-numbers/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/your-username/wavelytics/issues).
 
 ## 📝 License
 

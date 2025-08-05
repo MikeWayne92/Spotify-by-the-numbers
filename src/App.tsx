@@ -25,20 +25,34 @@ function App() {
       
       <div className="container mx-auto py-8 px-4">
         <div className="text-center mb-12">
+          {/* Logo */}
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="flex justify-center mb-6"
+          >
+            <img 
+              src="/logos/wavelytics-logo.png" 
+              alt="Wavelytics" 
+              className="h-16 md:h-20 object-contain"
+            />
+          </motion.div>
+          
           <motion.h1 
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-5xl md:text-6xl font-bold mb-4 bg-spotify-gradient bg-clip-text text-transparent"
+            transition={{ delay: 0.2 }}
+            className="text-4xl md:text-5xl font-bold mb-4 bg-spotify-gradient bg-clip-text text-transparent"
           >
-            Spotify by the Numbers
+            Spotify Analytics Dashboard
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
+            transition={{ delay: 0.4 }}
             className="text-lg md:text-xl text-gray-600 dark:text-spotify-gray-light max-w-2xl mx-auto"
           >
-            Visualize your listening habits with beautiful, interactive analytics
+            Visualize your listening habits with beautiful, interactive analytics powered by Wavelytics
           </motion.p>
         </div>
         
