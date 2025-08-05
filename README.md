@@ -23,8 +23,8 @@ A sleek, interactive dashboard for visualizing your Spotify listening history. U
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/wavelytics.git
-cd wavelytics
+git clone https://github.com/MikeWayne92/Spotify-by-the-numbers.git
+cd Spotify-by-the-numbers
 ```
 
 2. Install dependencies:
@@ -81,7 +81,7 @@ The guide includes:
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/your-username/wavelytics/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/MikeWayne92/Spotify-by-the-numbers/issues).
 
 ## 📝 License
 
